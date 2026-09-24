@@ -1,4 +1,4 @@
-# AI Agent Workflow with n8n and Gemini 🤖
+# AI Agent Workflow with n8n and Gemini
 
 Hey! This is a simple autonomous AI Agent workflow that I built using **n8n cloud** and **Google Gemini 2.5 Flash**. The cool thing about this agent is that it doesn't just chat—it can actually decide when and how to use external tools to browse the web, scrape content, and research information live based on what you ask.
 
