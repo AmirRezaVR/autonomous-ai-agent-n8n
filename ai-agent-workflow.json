@@ -104,8 +104,10 @@
     {
       "parameters": {
         "toolDescription": "Use this tool to get the current weather dynamic information for a specific city. The input must be the city name in English",
-        "url": "=https://api.openweathermap.org/data/2.5/weather?q={{ $fromAI('city_name', 'The name of the city to get weather for, in English') }}&appid=eee11df5a976c2b532e8c74b205f152c&units=metric",
-        "options": {}
+        "url": "=https://api.openweathermap.org/data/2.5/weather?q={{ $fromAI('city_name', 'The name of the city to get weather for, in English') }}&units=metric",
+        "options": {},
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth"
       },
       "type": "n8n-nodes-base.httpRequestTool",
       "typeVersion": 4.4,
@@ -114,7 +116,13 @@
         208
       ],
       "id": "8a79cd5d-a41b-4068-a890-ca3c831914e1",
-      "name": "HTTP Request1"
+      "name": "HTTP Request1",
+      "credentials": {
+        "httpQueryAuth": {
+          "id": null,
+          "name": "OpenWeatherMap Query Auth"
+        }
+      }
     }
   ],
   "pinData": {},
